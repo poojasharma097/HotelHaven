@@ -15,6 +15,25 @@ The users can book the hotels that they want and they can also add their own acc
 * ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 * ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
+## Screenshots
+<kbd><img src="https://github.com/poojasharma097/HotelHaven/blob/main/screenshots/Haven-Home.png" /></kbd> 
+&nbsp;&nbsp;&nbsp;
+<kbd><img src="https://github.com/poojasharma097/HotelHaven/blob/main/screenshots/Haven-Login.png" /></kbd>
+&nbsp;&nbsp;&nbsp;
+<kbd><img src="https://github.com/poojasharma097/HotelHaven/blob/main/screenshots/Haven-Register.png" /></kbd>
+&nbsp;&nbsp;&nbsp;
+<kbd><img src="https://github.com/poojasharma097/HotelHaven/blob/main/screenshots/Haven-Profile.png" /></kbd>
+&nbsp;&nbsp;&nbsp;
+<kbd><img src="https://github.com/poojasharma097/HotelHaven/blob/main/screenshots/Haven-Booking1.png" /></kbd>
+&nbsp;&nbsp;&nbsp;
+<kbd><img src="https://github.com/poojasharma097/HotelHaven/blob/main/screenshots/Haven-Booking2.png" /></kbd>
+&nbsp;&nbsp;&nbsp;
+<kbd><img src="https://github.com/poojasharma097/HotelHaven/blob/main/screenshots/Haven-Bookings.png" /></kbd>
+&nbsp;&nbsp;&nbsp;
+<kbd><img src="https://github.com/poojasharma097/HotelHaven/blob/main/screenshots/Haven-Place_Form1.png" /></kbd>
+&nbsp;&nbsp;&nbsp;
+<kbd><img src="https://github.com/poojasharma097/HotelHaven/blob/main/screenshots/Haven-Place_Form2.png" /></kbd>
+
 ## Contact Me
 LinkedIn Profile: [Pooja Sharma](https://www.linkedin.com/in/pooja-sharma-a80458222/)
 
