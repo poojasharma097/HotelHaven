@@ -32,7 +32,7 @@ export default function PlaceGallery ({place}) {
                   <div key={photo}>
                     <img
                       className="inset-0 min-h-screen min-w-full"
-                      src={"http://localhost:3000/uploads/" + photo}
+                      src={"https://hotelhaven-i9un.onrender.com/uploads/" + photo}
                     />
                   </div>
                 ))}
@@ -48,7 +48,7 @@ export default function PlaceGallery ({place}) {
               <div>
                 <img onClick={() => setShowAllPhotos(true)}
                   className="cursor-pointer aspect-square object-cover"
-                  src={"http://localhost:3000/uploads/" + place.photos?.[0]}
+                  src={"https://hotelhaven-i9un.onrender.com/uploads/" + place.photos?.[0]}
                 />
               </div>
             )}
@@ -57,14 +57,14 @@ export default function PlaceGallery ({place}) {
             {place.photos?.[1] && (
               <img onClick={() => setShowAllPhotos(true)}
                 className="aspect-square cursor-pointer object-cover"
-                src={"http://localhost:3000/uploads/" + place.photos?.[1]}
+                src={"https://hotelhaven-i9un.onrender.com/uploads/" + place.photos?.[1]}
               />
             )}
             <div className="overflow-hidden">
               {place.photos?.[2] && (
                 <img onClick={() => setShowAllPhotos(true)}
                   className="aspect-square cursor-pointer object-cover relative top-2"
-                  src={"http://localhost:3000/uploads/" + place.photos?.[2]}
+                  src={"https://hotelhaven-i9un.onrender.com/uploads/" + place.photos?.[2]}
                 />
               )}
             </div>
