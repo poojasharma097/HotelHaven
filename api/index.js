@@ -82,10 +82,10 @@ app.post("/login", async (req, res) => {
 
 app.get("/profile", (req, res) => {
   // const { token } = req.cookies;
-  const token = req.cookies.token || req.headers.authorization?.split(" ")[1];
+  const token = req.token || req.headers.authorization?.split(" ")[1];
   if (token) {
     jwt.verify(token, jwtSecret, {}, (err, user) => {
-      console.error("JWT verification error:", err);
+      if (err) throw err;
       res.json(user);
     });
   } else {
