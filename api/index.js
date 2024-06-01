@@ -85,7 +85,7 @@ app.get("/profile", (req, res) => {
   const token = req.cookies.token || req.headers.authorization?.split(" ")[1];
   if (token) {
     jwt.verify(token, jwtSecret, {}, (err, user) => {
-      if (err) throw err;
+      console.error("JWT verification error:", err);
       res.json(user);
     });
   } else {

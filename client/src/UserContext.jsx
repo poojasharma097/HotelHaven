@@ -24,6 +24,7 @@ export function UserContextProvider ({ children }) {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem('authToken');
+        console.log('Stored Token:', token);
         const response = await axios.get('/profile', {
           headers: {
             'Authorization': `Bearer ${token}`
