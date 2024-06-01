@@ -6,6 +6,6 @@ export default function PlaceImg ({place,index=0,className=null}){
         className = " w-48 h-32 object-cover";
     }
     return (
-        <img className={className} src={'https://hotel-haven-gilt.vercel.app/uploads/'+place.photos[index]} />
+        <img className={className} src={'http://localhost:3000/uploads/'+place.photos[index]} />
     );
 }
