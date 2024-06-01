@@ -18,7 +18,7 @@ export default function IndexPage() {
               {place.photos?.[0] && (
                 <img
                   className="rounded-2xl aspect-square object-cover"
-                  src={"http://localhost:3000/uploads/" + place.photos?.[0]}
+                  src={"https://hotel-haven-gilt.vercel.app/uploads/" + place.photos?.[0]}
                 />
               )}
             </div>
