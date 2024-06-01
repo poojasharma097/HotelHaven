@@ -68,7 +68,8 @@ app.post("/login", async (req, res) => {
         {},
         (err, token) => {
           if (err) throw err;
-          res.cookie("token", token).json(userDoc);
+          // res.cookie("token", token).json(userDoc);
+          res.json({ user: userDoc, token });
         }
       );
     } else {
@@ -80,7 +81,8 @@ app.post("/login", async (req, res) => {
 });
 
 app.get("/profile", (req, res) => {
-  const { token } = req.cookies;
+  // const { token } = req.cookies;
+  const token = req.cookies.token || req.headers.authorization?.split(" ")[1];
   if (token) {
     jwt.verify(token, jwtSecret, {}, (err, user) => {
       if (err) throw err;

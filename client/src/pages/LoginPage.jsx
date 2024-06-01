@@ -14,6 +14,7 @@ export default function LoginPage() {
     e.preventDefault();
     const {data} = axios.post("/login", {email, password }).then(() => {
         setUser(data);
+        localStorage.setItem("authToken", data.token);
         console.log(user);
       alert("Login successful.");
       setRedirect(true);

@@ -11,14 +11,36 @@ UserContextProvider.propTypes = {
 export function UserContextProvider ({ children }) {
   const [user, setUser] = useState(null);
   const [ready, setReady] = useState(false);
+  // useEffect(() => {
+  //   if (!user) {
+  //     axios.get('/profile').then(({data}) => {
+  //       setUser(data);
+  //       setReady(true);
+  //     });
+  //   }
+  // },[user]);
+
   useEffect(() => {
-    if (!user) {
-      axios.get('/profile').then(({data}) => {
-        setUser(data);
+    const fetchProfile = async () => {
+      try {
+        const token = localStorage.getItem('authToken');
+        const response = await axios.get('/profile', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        setUser(response.data);
         setReady(true);
-      });
+      } catch (error) {
+        console.error('Failed to fetch profile', error);
+        setReady(true);
+      }
+    };
+
+    if (!user) {
+      fetchProfile();
     }
-  },[user]);
+  }, [user]);
 
   return (
     <UserContext.Provider value={{user, setUser, ready}}>
