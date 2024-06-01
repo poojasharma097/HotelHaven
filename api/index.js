@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(
   cors({
     credentials: true,
-    origin: "https://hotelhaven-project.netlify.app",
+    origin: "http://localhost:5173",
   })
 );
 
@@ -68,8 +68,7 @@ app.post("/login", async (req, res) => {
         {},
         (err, token) => {
           if (err) throw err;
-          // res.cookie("token", token).json(userDoc);
-          res.json({ user: userDoc, token });
+          res.cookie("token", token).json(userDoc);
         }
       );
     } else {
@@ -81,8 +80,7 @@ app.post("/login", async (req, res) => {
 });
 
 app.get("/profile", (req, res) => {
-  // const { token } = req.cookies;
-  const token = req.token || req.headers.authorization?.split(" ")[1];
+  const { token } = req.cookies;
   if (token) {
     jwt.verify(token, jwtSecret, {}, (err, user) => {
       if (err) throw err;

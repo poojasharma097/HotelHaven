@@ -18,7 +18,7 @@ export default function IndexPage() {
               {place.photos?.[0] && (
                 <img
                   className="rounded-2xl aspect-square object-cover"
-                  src={"https://hotelhaven-i9un.onrender.com/uploads/" + place.photos?.[0]}
+                  src={"http://localhost:3000/uploads/" + place.photos?.[0]}
                 />
               )}
             </div>

@@ -6,6 +6,6 @@ export default function PlaceImg ({place,index=0,className=null}){
         className = " w-48 h-32 object-cover";
     }
     return (
-        <img className={className} src={'https://hotelhaven-i9un.onrender.com/uploads/'+place.photos[index]} />
+        <img className={className} src={'http://localhost:3000/uploads/'+place.photos[index]} />
     );
 }
