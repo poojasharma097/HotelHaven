@@ -1,7 +1,7 @@
 # HotelHaven
 
 This is a hotel booking website which will help users to discover their ideal stay with the vast selection of hotels. 
-The users can book the hotels that they want and they can also add their own accomodations for everyone to book.
+The users can book the hotels that they want and they can also add their own accommodation for everyone to book.
 
 ## Built with
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
